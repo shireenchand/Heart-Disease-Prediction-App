@@ -29,7 +29,7 @@ with st.form("Enter the details below",clear_on_submit=True):
 	rest_bp = st.text_input(label="Enter Value")
 
 
-	st.subheader("Enter Cholesterol Level")
+	st.subheader("Enter Cholesterol Level in mmHg")
 	chol = st.text_input(key="restbp",label="Enter Value")
 
 	global submitted

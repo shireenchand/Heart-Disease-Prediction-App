@@ -25,11 +25,11 @@ with st.form("Enter the details below",clear_on_submit=True):
 	chest_pain = st.selectbox(label="Select Below",options=("Typical Angina","Atypical Angina","Non-Angina Pain","Asymptomatic"))
 
 
-	st.subheader("Enter Resting Blood Pressure")
+	st.subheader("Enter Resting Blood Pressure in mmHg")
 	rest_bp = st.text_input(label="Enter Value")
 
 
-	st.subheader("Enter Cholesterol Level in mmHg")
+	st.subheader("Enter Cholesterol Level in mg/dl")
 	chol = st.text_input(key="restbp",label="Enter Value")
 
 	global submitted

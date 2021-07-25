@@ -56,7 +56,7 @@ else:
 if submitted:
 	data = [[age,g,cp,rest_bp,chol,max_heart_rate]]
 	X = pd.DataFrame(data,columns=['age','gender','chest pain','blood pressure','cholestrol level','max heart rate'])
-	pickle_in = open('finalized_model2.pkl', 'rb') 
+	pickle_in = open('model.pkl', 'rb') 
 	model = pickle.load(pickle_in)
 	result = model.predict(X)
 
